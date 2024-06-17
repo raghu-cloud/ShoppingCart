@@ -3,7 +3,7 @@ package com.ollion.Shopping.Cart.services;
 import com.ollion.Shopping.Cart.DTOs.Item;
 import com.ollion.Shopping.Cart.entities.ItemEntity;
 import com.ollion.Shopping.Cart.repositories.ShoppingCartRepository;
-import mapper.ItemMapper;
+import com.ollion.Shopping.Cart.mapper.ItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +25,7 @@ public class ShoppingCartService {
     }
 
     public void addItem(Item item) {
+
         ItemEntity itemEntity = ItemMapper.getItemEntity(item);
         shoppingCartRepository.save(itemEntity);
     }

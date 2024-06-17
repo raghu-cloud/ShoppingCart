@@ -1,9 +1,7 @@
-package mapper;
+package com.ollion.Shopping.Cart.mapper;
 
 import com.ollion.Shopping.Cart.DTOs.Item;
 import com.ollion.Shopping.Cart.entities.ItemEntity;
-
-import java.util.List;
 
 public class ItemMapper {
 
